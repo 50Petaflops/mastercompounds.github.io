@@ -80,7 +80,6 @@ header {
     right: 0;
     bottom: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for overlay effect */
     z-index: 1; /* Put it above the background image but below any content inside cont-1 */
 }
 
