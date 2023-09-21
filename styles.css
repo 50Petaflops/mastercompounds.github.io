@@ -22,9 +22,7 @@ body, html {
 /* Header Styles */
 header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0);
     width: 100%;
    }
 
@@ -32,9 +30,6 @@ header {
     justify-self: flex-start;
     display: flex;
     align-items: center;
-}
-
-.container-2 {
 }
 
 .navbar-brand img {
@@ -64,23 +59,91 @@ header {
 }
 
 
-.cont-2-3 {
-    flex: 1;
-}
-
-.cont-2-3 .nav-item .nav-link {
-    color: #ffffff;
-}
-
-.cont-3-1 {
-    background: url(body_bg.jpg) no-repeat center center;
-    background-size: contain;
+.cont-1 {
+    position: relative; /* Important for the absolute positioning of the pseudo-element */
     width: 100%;
-    height: 50vh;
-    padding-top: 30vw; /* Adjust based on your image's aspect ratio */
-    position: relative;
+    background-image: url('display-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
 }
 
+.cont-1::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    content: ""; /* Essential for the pseudo-element to show up */
+    position: absolute; /* Position it over its parent */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for overlay effect */
+    z-index: 1; /* Put it above the background image but below any content inside cont-1 */
+}
+
+.cont-1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: arial;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center; /* horizontal alignment */
+    align-items: center;     /* vertical alignment */
+}
+
+.part-0 {
+    padding: 5px 5vw 0  ;
+    position: absolute;
+    z-index: 3; /* Higher z-index than .part-1 */
+    border-top: 5px solid blue;
+    width: 100%; /* You can adjust this as necessary */
+    background-color: rgba(255, 255, 255, 0.95); /* This gives a bit of transparency. Adjust to your needs */
+}
+
+.part-0 .nav-item:hover {
+    background-color: #f8f9fa; /* This is Bootstrap's light gray. Change as necessary. */
+}
+
+.part-0 .nav-link:hover {
+    background-color: transparent; /* Ensures that the link itself doesn't get a background color, making the effect smooth */
+    text-decoration: none; /* Removes the underline */
+}
+
+.part-1 {
+    position: relative;
+    z-index: 2;
+    /* Other styles remain unchanged */
+}
+
+.part-1 {
+    position: relative;
+    z-index: 2;
+    }
+
+.part-2 {
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.part-2 img {
+    border-radius: 40px;
+    width: 90%;
+    height: auto;
+}
 
 /* Hide the nav list on smaller screens and always show the toggle button */
 @media (max-width: 768px) {
@@ -88,6 +151,7 @@ header {
         display: none; /* hide the nav list */
     }
     .toggle-button {
+        border-color: #fff;
         display: flex; /* show the hamburger menu */
     }
     .company-name h1 {
@@ -105,10 +169,6 @@ header {
     }
     .clearfix {
         flex-direction: column;
-    }
-    .biz-imgs-1, #sidebar {
-        flex-basis: 100%;
-    }
 }
 
 /* Center the nav list items horizontally on larger screens */
