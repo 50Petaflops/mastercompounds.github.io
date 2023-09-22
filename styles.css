@@ -6,6 +6,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
+    text-align: justify;
 }
 .body-bg {
     display: flex;
@@ -123,20 +124,25 @@ header {
 .part-1 {
     position: relative;
     z-index: 2;
-    height: 80vh
     /* Other styles remain unchanged */
 }
 
+.part-1 {
+    position: relative;
+    z-index: 2;
+    }
+
 .part-2 {
     display: flex;
-    width: 100%; 
+    width: 90vw; 
     flex-direction: column;
+    margin: 0 auto;
     align-items: center;
 }
 
 .part-2 img {
-    border-radius: 40px;
-    width: 90%;
+    border-radius: 30px;
+    width: 100%;
     height: auto;
 }
 
