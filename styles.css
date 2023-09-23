@@ -64,9 +64,8 @@ header {
     padding: 5px 5vw 0  ;
     position: fixed;
     z-index: 3; /* Higher z-index than .part-1 */
-    border-top: 10px solid blue;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border: 5px solid blue;
+    border-radius: 10px;
     width: 90%; /* You can adjust this as necessary */
     background-color: rgba(255, 255, 255, 0.95); /* This gives a bit of transparency. Adjust to your needs */
 }
@@ -74,11 +73,12 @@ header {
 .hero-section {
     position: relative; 
     width: 100%;
+    margin-top: -5vh;
     background-image: url('display-picture.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     justify-content: center; /* horizontal alignment */
     align-items: center;     /* vertical alignment */
