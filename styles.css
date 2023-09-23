@@ -104,27 +104,16 @@ header {
 }
 
 .part-0 {
+    left: 50%; /* Move the left edge to the center of the viewport */
+    transform: translateX(-50%); /* Shift it back by half its width */
     padding: 5px 5vw 0  ;
-    position: absolute;
+    position: fixed;
     z-index: 3; /* Higher z-index than .part-1 */
-    border-top: 5px solid blue;
-    width: 100%; /* You can adjust this as necessary */
+    border-top: 10px solid blue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 90%; /* You can adjust this as necessary */
     background-color: rgba(255, 255, 255, 0.95); /* This gives a bit of transparency. Adjust to your needs */
-}
-
-.part-0 .nav-item:hover {
-    background-color: #f8f9fa; /* This is Bootstrap's light gray. Change as necessary. */
-}
-
-.part-0 .nav-link:hover {
-    background-color: transparent; /* Ensures that the link itself doesn't get a background color, making the effect smooth */
-    text-decoration: none; /* Removes the underline */
-}
-
-.part-1 {
-    position: relative;
-    z-index: 2;
-    /* Other styles remain unchanged */
 }
 
 .part-1 {
