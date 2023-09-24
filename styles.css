@@ -66,6 +66,7 @@ header {
     z-index: 3; /* Higher z-index than .part-1 */
     border: 5px solid blue;
     border-radius: 10px;
+    border-top: none;
     width: 90%; /* You can adjust this as necessary */
     background-color: rgba(255, 255, 255, 0.95); /* This gives a bit of transparency. Adjust to your needs */
 }
