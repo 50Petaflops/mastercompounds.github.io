@@ -64,7 +64,6 @@ header {
     padding: 5px 5vw 0  ;
     position: fixed;
     z-index: 3; /* Higher z-index than .part-1 */
-    border: 5px solid blue;
     border-radius: 10px;
     border-top: none;
     width: 90%; /* You can adjust this as necessary */
