@@ -21,10 +21,10 @@
     <div class="">
 
         <!-- HEADER -->
-        <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <header class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-1 navbar-brand">
                 <a class="navbar-brand" href="#">
-                    <img src="mcu_logo.jpg" alt="mcu_logo">
+                    <img src="mcu_logo.png" alt="mcu_logo">
                 </a>
                 <div class="company-name">
                     <h1>Master</h1>
@@ -41,7 +41,7 @@
             </div>                  
         </header>
 
-        <div class="part-0 collapse navbar-collapse bg-dark" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse navbar-light bg-light" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -59,11 +59,13 @@
         <!-- CONTENT -->
         <div class="hero-section">
             <!-- The collapsible navigation list -->
-            <div class="hero-content">
-                <h1>Uganda's Number One Compound Designers</h1>
-                <h2>Paver Installation</h2>
-                <h2>Gardening</h2>
-                <h2>Landscaping</h2>
+            <div class="hero-content container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <h1>Uganda's Number One Compound Designers</h1>
+                        <p>Transform Your Space with Master Compounds</p>
+                    </div>
+                </div>               
             </div>
         </div>
         
@@ -73,9 +75,13 @@
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <h1>Transform Your Space with Master Compounds</h1>
                         <p>Experience the magic of premium-quality compounds</p>
+                        <h2>Paver Installation</h2>
+                        <h2>Gardening</h2>
+                        <h2>Landscaping</h2>
                         
                         <!-- Bootstrap Carousel for Three Changing Images -->
                         <div id="ctaCarousel" class="carousel slide" data-bs-ride="carousel">
+                           
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="body-bg-7.jpg" class="d-block w-100" alt="First Image Description">
@@ -90,14 +96,19 @@
                                     <img src="body-bg.jpg" class="d-block w-100" alt="Third Image Description">
                                 </div>
                             </div>
+
+
                             <a class="carousel-control-prev" href="#ctaCarousel" role="button" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </a>
+
+
                             <a class="carousel-control-next" href="#ctaCarousel" role="button" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span> 
                                 <span class="visually-hidden">Next</span>
                             </a>
+
                         </div>
                         
                         <a href="#" class="btn btn-primary mt-4">Contact Us</a>
@@ -120,29 +131,19 @@
                 </div>
             </div>
         </div>
-        
-        
-    
 
         
-        <div class="part-2">
-            <div class="cont-2">
-                <div class="cont-2-1" style="text-align:center; width: 100%;">
-                    <h2 style="font-weight: bolder;">
-                    Top Quality
-                    </h2>
-                    <br>
-                    <img src="body_bg.jpg" alt="image" class="">
+        <div class="about-section container my-5">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2"> <!-- This centers the content for larger screens, making it span 8 out of the 12 grid columns and offsetting (centering) it by 2 columns. -->
+                        <h2 class="mb-4 text-center">Top Quality</h2>
+                        <p>We believe that the heart of a great compound lies in its quality.</p>
+                        <p>Our experts meticulously select materials and design landscapes that not only look visually appealing but also stand the test of time. From the smallest flower bed to expansive gardens, our dedication to top-tier quality shines through in every square inch.</p>
+                        
+                    </div>
                 </div>
-            </div>
-
-            <br>
-
-            <p style="font-weight: bold;">
-                We believe that the heart of a great compound lies in its quality. Our experts meticulously select materials and design landscapes that not only look visually appealing but also stand the test of time. From the smallest flower bed to expansive gardens, our dedication to top-tier quality shines through in every square inch.
-            </p>
-            
         </div>
+           
 
 
         <!-- FOOTER -->
