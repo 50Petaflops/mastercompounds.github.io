@@ -21,16 +21,27 @@ body, html {
 
 /* Header Styles */
 header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
    }
+
+.scrolled {
+    background-color: rgba(255, 255, 255, 1)!important; /* fully opaque */
+    transition: background-color 0.3s ease-in-out;
+}
+
 
 .container-1 {
     justify-self: flex-start;
     display: flex;
     align-items: center;
+}
+
+.navbar-brand {
+   
 }
 
 .navbar-brand img {
@@ -71,7 +82,7 @@ header {
 #navbarNavAltMarkup {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 1100%;
     padding-top: 20vh;
     transition: left 0.01s;
     z-index: 5;
@@ -80,7 +91,7 @@ header {
 .hero-section {
     position: relative;
     width: 100%;
-    background-image: url('display-picture.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url('display-picture.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,16 +101,6 @@ header {
     align-items: center;
 }
 
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
-}
 
 .hero-content h1 {
     font-size: 2.5em;
