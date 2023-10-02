@@ -26,11 +26,12 @@
                 <a class="navbar-brand" href="#">
                     <img src="mcu_logo.png" alt="mcu_logo">
                 </a>
-                <div class="company-name">
-                    <h1>Master</h1>
-                    <h1>Compounds</h1>
-                    <h1>Uganda</h1>
+                <div class="company-name d-flex flex-column align-items-start text-primary mt-3 mb-3">
+                    <h1 class="display-4">Master</h1>
+                    <h1 class="display-5">Compounds</h1>
+                    <h1 class="display-6">Uganda</h1>
                 </div>
+                
             </div>
 
             <!-- The Hamburger button -->
@@ -41,20 +42,53 @@
             </div>                  
         </header>
 
-        <div class="collapse navbar-collapse navbar-light bg-light" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ml-auto mr-3">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        <div class="collapse navbar-collapse navbar-light bg-light pl-4" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold custom-nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold custom-nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold custom-nav-link" href="#services">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold custom-nav-link" href="#contact">Contact Us</a>
+                </li>
             </ul>
-        
+            
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="tel:+256774802372"><i class="fas fa-phone-alt mr-2"></i> +256 774 802372</a></li>
-                <li class="nav-item"><a class="nav-link" href="mailto:mbabaliasuman08@gmail.com"><i class="fas fa-envelope mr-2"></i> Email</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://wa.me/256774802372"><i class="fab fa-whatsapp mr-2" style="color: green;"></i>Whatsapp</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold h5 custom-nav-link" href="tel:+256774802372"><i class="fas fa-phone-alt mr-2"></i> +256 774 802372</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold h5 custom-nav-link" href="mailto:mbabaliasuman08@gmail.com"><i class="fas fa-envelope mr-2"></i> Email</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold h5 custom-nav-link" href="https://wa.me/256774802372"><i class="fab fa-whatsapp mr-2" style="color: green;"></i> Whatsapp</a>
+                </li>
             </ul>
         </div>
+        
+        <!-- Custom styles for hover effect and other customizations -->
+        <style>
+            .custom-nav-link:hover {
+                background-color: black;
+                color: white !important; 
+                text-decoration: none;
+            }
+        </style>
+        
+        
+        <!-- Custom style for hover effect -->
+        <style>
+            .nav-link:hover {
+                color: #007BFF !important;  /* Bootstrap's primary blue */
+                text-decoration: underline;
+            }
+        </style>
+        
 
         <!-- CONTENT -->
         <div class="hero-section">
