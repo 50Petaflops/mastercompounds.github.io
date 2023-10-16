@@ -198,6 +198,35 @@ header {
     display: none;
 }
 
+.services-section {
+    opacity: 5%;
+    background-image: url(services.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#imageCarousel .carousel-inner {
+    height: 45vh;  /* Adjust as per your requirement */
+}
+
+#imageCarousel .carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    width: auto;
+}
+
+.custom-btn {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width: 200px;  /* or any other width you prefer */
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;  /* optional: for a smooth hover effect */
+}
+
+
 
 /* Footer */
 footer {
