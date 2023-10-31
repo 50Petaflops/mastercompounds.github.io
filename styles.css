@@ -277,41 +277,6 @@ h1 {
     }
 
 
-/* Image Gallery */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.image {
-    box-sizing: border-box;  /* to include padding in total width */
-    flex: 1;                 /* flex-grow: 1, allowing it to grow */
-    min-width: calc(50% - 20px); /* on smaller screens 2 images per row */
-    max-width: calc(25% - 20px); /* on bigger screens 4 images per row */
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    margin: 10px;
-    padding-top: 75%; /* aspect ratio 4:3, adjust accordingly */
-    position: relative;
-}
-
-/* For smaller screens */
-@media (max-width: 767px) {
-    .image {
-        min-width: calc(100% - 20px); /* on very small screens 1 image per row */
-    }
-}
-
-/* For larger screens */
-@media (min-width: 1200px) {
-    .image {
-        min-width: calc(20% - 20px); /* on larger screens 5 images per row */
-    }
-}
 
 /* Overall footer styles */
 footer.bg-dark {
